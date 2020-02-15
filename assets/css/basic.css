@@ -1,0 +1,10 @@
+/* Resets */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* General Basic Styles */
+.up-case {
+    text-transform: uppercase;
+}
