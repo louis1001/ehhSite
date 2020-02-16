@@ -1,0 +1,116 @@
+#main-nav {
+  height: 45px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat';
+}
+
+#main-nav #nav-logo {
+  margin-top: 5px;
+  width: 200px;
+}
+
+#main-nav #navbar-actions {
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav #navbar-actions .nav-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header {
+  background: url(/assets/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header div {
+  display: inline-block;
+  width: 40%;
+}
+
+header #landing-text {
+  font-family: "Open Sans", serif !important;
+  font-weight: 600;
+  padding: 20px 70px;
+  margin-top: 60px;
+}
+
+header #landing-text h1 {
+  font-family: 'Slabo 27px', serif;
+  font-weight: 400;
+}
+
+header #landing-text #how-works img {
+  vertical-align: middle;
+  width: 40px;
+}
+
+header #landing-text #buttons-container {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+header #landing-text #buttons-container > .btn-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+header #landing-text #buttons-container > .btn-group .btn {
+  display: block;
+  margin: 0 5px;
+}
+
+header #landing-green {
+  color: #c1f61d;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.orange-btn {
+  background: #ce5c00;
+  border: 1px solid #ce5c00;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.orange-btn:hover {
+  background: none;
+  color: white;
+}
+
+.white-outline-btn {
+  background: none;
+  border: 1px solid white;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.white-outline-btn:hover {
+  background: white;
+  color: #ce5c00;
+}

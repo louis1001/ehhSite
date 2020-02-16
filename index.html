@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eHarvestHub</title>
 
+    <!-- Libraries JS -->
+    <script src="assets/js/libs/sal.js"></script>
+
+    <!-- Libraries CSS -->
+    <link rel="stylesheet" href="assets/css/libs/sal.css">
+
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/basic.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <nav id="main-nav">
@@ -39,23 +47,30 @@
                 con transportistas y supermercados
             </h1>
 
-            <p class="landing-sub">Nuestras herramientas permiten administrar el ciclo de vida de sus productos desde la cosecha hasta el envío.</p>
+            <p class="landing-sub">
+                Nuestras herramientas permiten administrar el ciclo de vida
+                de sus productos desde la cosecha hasta el envío.
+            </p>
 
             <p id="how-works">
                 <img src="assets/img/btn_play.png" alt="play">
                 ¿Como functiona?
             </p>
 
-            <div>
-                <button class="btn up-case" id="cto-programs">Programas piloto latinoamerica</button>
-            </div>
-
-            <div>
-                <button class="up-case login-but">Registrarse</button>
-                <button class="up-case login-but">Iniciar Sesión</button>
+            <div id="buttons-container">
+                <div class="btn-group">
+                    <button class="orange-btn btn up-case" id="cto-programs">
+                        Programas piloto latinoamerica
+                    </button>
+                </div>
+    
+                <div class="btn-group">
+                    <button class="up-case btn white-outline-btn">Registrarse</button>
+                    <button class="up-case btn white-outline-btn">Iniciar Sesión</button>
+                </div>
             </div>
         </div>
-        <div id="landing-img">
+        <div data-sal="zoom-in" style="--sal-duration: 1.5s" id="landing-img">
             <img src="assets/img/image_slider_u95.png" alt="">
         </div>
     </header>
@@ -93,7 +108,9 @@
         <section id="services">
             <div class="service-container">
                 <h2 class="up-case pilot-program">Programas piloto en latinoamerica</h2>
-                <h3 class="muted pilot-program-register">Regístrese y forme parte de nuestra comunidad</h3>
+                <h3 class="muted pilot-program-register">
+                    Regístrese y forme parte de nuestra comunidad
+                </h3>
 
                 <button class="btn up-case out-dark">
                     <img src="assets/img/u107_b.svg" alt=""> Regístrese
@@ -118,7 +135,7 @@
         </section>
         <section id="eHarvestFarm">
             <div class="service-img">
-                <img src="assets/img/u61.png" alt="">
+                <img data-sal="slide-left" src="assets/img/u61.png" alt="">
             </div>
             <div class="service-main">
                 <h1>eHarvestFarm</h1>
@@ -154,7 +171,7 @@
 
         <section id="MarketPlace">
             <div class="service-img">
-                <img src="assets/img/u40.jpg" alt="">
+                <img data-sal="slide-left" src="assets/img/u40.jpg" alt="">
             </div>
             <div class="service-main">
                 <h1>MarketPlace</h1>
@@ -190,17 +207,18 @@
 
         <section id="eHarvestHaul">
             <div class="service-img">
-                <img src="assets/img/u40.jpg" alt="">
+                <img data-sal="slide-left" src="assets/img/u28.jpg" alt="">
             </div>
             <div class="service-main">
                 <h1>eHarvestHaul</h1>
                 <h5 class="up-case">Para transportistas</h5>
                 <p>
-                    Los dueños de carga tienen acceso a todos los transportistas disponibles
-                    para cargas individuales y cargas consolidadas, esto para reducir el costo
-                    total de envío, Todo esto para ayudar a nuestros clientes a reducir el costo
-                    de transporte y al mismo tiempo ayudar al camionero independiente a aumentar sus
-                    márgenes de ganancia.
+                    Los dueños de carga tienen acceso a todos los transportistas
+                    disponibles para cargas individuales y cargas consolidadas,
+                    esto para reducir el costo total de envío, Todo esto para ayudar
+                    a nuestros clientes a reducir el costo de transporte y al mismo
+                    tiempo ayudar al camionero independiente a aumentar sus márgenes
+                    de ganancia.
                 </p>
                 <ul>
                     <li>Ordenes</li>
@@ -222,5 +240,8 @@
     <footer>
         <!-- Anything -->
     </footer>
+    <script>
+        sal()
+    </script>
 </body>
 </html>

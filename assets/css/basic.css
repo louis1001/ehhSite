@@ -4,6 +4,52 @@ button {
     cursor: pointer;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 45px;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+p {
+    line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* max-width: 100vw; */
+    overflow-x: hidden;
+    --sal-duration: 1s
+}
+
 /* General Basic Styles */
 .up-case {
     text-transform: uppercase;
