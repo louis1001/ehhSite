@@ -1,6 +1,6 @@
 #main-nav {
-  height: 45px;
-  padding: 10px;
+  max-height: 45px;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +16,7 @@
 #main-nav #nav-logo {
   margin-top: 5px;
   width: 200px;
+  max-height: 100%;
 }
 
 #main-nav #navbar-actions {
@@ -36,19 +37,20 @@ header {
   background-position: center center;
   background-size: cover;
   color: white;
-  height: 100vh;
+  height: calc(100vh - 45px);
   overflow: hidden;
+  text-align: center;
 }
 
 header div {
+  text-align: left;
   display: inline-block;
-  width: 40%;
+  max-width: 450px;
 }
 
 header #landing-text {
   font-family: "Open Sans", serif !important;
   font-weight: 600;
-  padding: 20px 70px;
   margin-top: 60px;
 }
 
@@ -81,8 +83,24 @@ header #landing-text #buttons-container > .btn-group .btn {
   margin: 0 5px;
 }
 
+header #landing-img {
+  max-width: 500px;
+}
+
+header #landing-img img {
+  width: 100%;
+}
+
 header #landing-green {
   color: #c1f61d;
+}
+
+#countries-show {
+  height: 237px;
+}
+
+#countries-show .img-container {
+  height: 100%;
 }
 
 .btn {
