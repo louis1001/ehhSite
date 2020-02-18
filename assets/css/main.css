@@ -188,10 +188,65 @@ header #landing-green {
   margin: 0 15px;
 }
 
+.service-container {
+  margin: 25px 0 80px 0;
+  text-align: center;
+}
+
+.service-container .pilot-program {
+  font-size: 22px;
+  color: #c6771e;
+  margin: 10px;
+}
+
+.service-container .pilot-program-register {
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 4px;
+  margin: 10px;
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+.service-container button {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  color: #929292;
+  padding: 8px 20px;
+}
+
+.service-container button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#why-ehh h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #848484;
+  margin-bottom: 10px;
+}
+
+#why-ehh h3 {
+  color: #929292;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#why-ehh p {
+  max-width: 630px;
+  font-size: 14px;
+  padding: 0 20px;
+  margin: 0 auto;
+  color: #888;
+}
+
 .btn {
   border-radius: 20px;
   padding: 5px 20px;
   font-size: 14px;
+  vertical-align: middle;
 }
 
 .orange-btn {
@@ -216,4 +271,12 @@ header #landing-green {
 .white-outline-btn:hover {
   background: white;
   color: #ce5c00;
+}
+
+.out-dark {
+  background: none;
+  border: 1px solid black;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  vertical-align: middle;
 }

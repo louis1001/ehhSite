@@ -54,3 +54,7 @@ body{
 .up-case {
     text-transform: uppercase;
 }
+
+.muted {
+    color: #929292
+}
