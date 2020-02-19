@@ -8,12 +8,14 @@ header
 
     color: white
     height: calc(100vh - 45px)
+    max-height: 800px
 
     overflow: hidden
     display: flex
 
     justify-content: center
     align-items: center
+    padding: 0 30px
     // text-align: center
 
     div
@@ -22,7 +24,6 @@ header
         max-width: 450px
 
     #landing-text
-        // font-size: 22px
         font-family: 'Open Sans', serif
         font-weight: 600
 
@@ -33,11 +34,11 @@ header
             font-family: 'Slabo 27px', serif
             font-weight: 400
         
-        #how-works img
+        .how-works img
             vertical-align: middle
             width: 40px
 
-        #buttons-container
+        .buttons-container
             display: block
             width: 100%
             margin-top: 40px
@@ -52,7 +53,6 @@ header
                     margin: 0 5px
     
     #landing-img
-        // background: black
         max-width: 560px
 
         img
@@ -60,3 +60,46 @@ header
 
     #landing-green
         color: #c1f61d
+    
+    #landing-subheader-responsive
+        display: none
+        background: rgb(85, 52, 7)
+        width: 100%
+        margin: 0
+
+    @media screen and ( max-width: 1024px)
+        #landing-text
+            h1
+                font-size: 2.2rem
+            
+            .landing-sub
+                width: 300px
+
+    @media screen and ( max-width: 768px ), screen and (max-height: 520px)
+        flex-direction: column
+        height: auto
+        padding: 0
+
+        #landing-text
+            text-align: center
+
+        #landing-subheader
+            display: none
+
+        #landing-subheader-responsive
+            display: block
+            padding: 5px 20vw 40px 20vw
+
+            .how-works
+                text-align: center
+
+                *
+                    vertical-align: middle
+
+            .buttons-container
+                text-align: center
+
+                button
+                    margin: 5px
+
+

@@ -1,18 +1,13 @@
 #countries-show
     margin-top: 1px
+    max-width: 100%
 
     #countries-elements
-        height: 237px
-        display: flex
-        // height: 100%
         color: white
 
         .img-container
             position: relative
-            height: 100%
-
-            // To be edited when working on responsiveness
-            width: calc(100vw/3)
+            height: 237px
 
             img
                 max-height: 100%
@@ -31,12 +26,14 @@
                 left: 50px
             
             .country-deploy
+                display: none       // It's failing. I'll come back to it
                 position: absolute
                 font-size: 24px
                 bottom: 10px
                 left: 50%
                 margin-left: -24px
                 right: 0
+                z-index: 10
 
                 .depl-arrow
                     cursor: pointer
@@ -44,19 +41,9 @@
                 &:hover>.depl-arrow
                     color: rgb(247, 151, 42)
 
-                &:hover>.register-deploy
-                    opacity: 1
-                    height: auto
-                    display: block
-
                 .register-deploy
-                    opacity: 0
-                    height: 0
-                    display: none
-                    overflow: hidden
                     position: absolute
                     background: #e9e9e9
-                    // bottom: -200%
                     color: black
 
                     left: -80%
@@ -68,7 +55,6 @@
                         margin-bottom: 15px
 
                     img
-                        overflow: hidden
                         min-width: auto
                         width: 25px
 

@@ -30,6 +30,12 @@
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  #main-nav #navbar-actions {
+    display: none;
+  }
+}
+
 header {
   background: url(/assets/img/header_bg.jpg);
   background-repeat: no-repeat;
@@ -38,6 +44,7 @@ header {
   background-size: cover;
   color: white;
   height: calc(100vh - 45px);
+  max-height: 800px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +55,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 30px;
 }
 
 header div {
@@ -66,18 +74,18 @@ header #landing-text h1 {
   font-weight: 400;
 }
 
-header #landing-text #how-works img {
+header #landing-text .how-works img {
   vertical-align: middle;
   width: 40px;
 }
 
-header #landing-text #buttons-container {
+header #landing-text .buttons-container {
   display: block;
   width: 100%;
   margin-top: 40px;
 }
 
-header #landing-text #buttons-container > .btn-group {
+header #landing-text .buttons-container > .btn-group {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +93,7 @@ header #landing-text #buttons-container > .btn-group {
   margin-bottom: 20px;
 }
 
-header #landing-text #buttons-container > .btn-group .btn {
+header #landing-text .buttons-container > .btn-group .btn {
   display: block;
   margin: 0 5px;
 }
@@ -102,22 +110,67 @@ header #landing-green {
   color: #c1f61d;
 }
 
+header #landing-subheader-responsive {
+  display: none;
+  background: #553407;
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  header #landing-text h1 {
+    font-size: 2.2rem;
+  }
+  header #landing-text .landing-sub {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px), screen and (max-height: 520px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  header #landing-text {
+    text-align: center;
+  }
+  header #landing-subheader {
+    display: none;
+  }
+  header #landing-subheader-responsive {
+    display: block;
+    padding: 5px 20vw 40px 20vw;
+  }
+  header #landing-subheader-responsive .how-works {
+    text-align: center;
+  }
+  header #landing-subheader-responsive .how-works * {
+    vertical-align: middle;
+  }
+  header #landing-subheader-responsive .buttons-container {
+    text-align: center;
+  }
+  header #landing-subheader-responsive .buttons-container button {
+    margin: 5px;
+  }
+}
+
 #countries-show {
   margin-top: 1px;
+  max-width: 100%;
 }
 
 #countries-show #countries-elements {
-  height: 237px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: white;
 }
 
 #countries-show #countries-elements .img-container {
   position: relative;
-  height: 100%;
-  width: calc(100vw/3);
+  height: 237px;
 }
 
 #countries-show #countries-elements .img-container img {
@@ -143,12 +196,14 @@ header #landing-green {
 }
 
 #countries-show #countries-elements .img-container .country-deploy {
+  display: none;
   position: absolute;
   font-size: 24px;
   bottom: 10px;
   left: 50%;
   margin-left: -24px;
   right: 0;
+  z-index: 10;
 }
 
 #countries-show #countries-elements .img-container .country-deploy .depl-arrow {
@@ -159,17 +214,7 @@ header #landing-green {
   color: #f7972a;
 }
 
-#countries-show #countries-elements .img-container .country-deploy:hover > .register-deploy {
-  opacity: 1;
-  height: auto;
-  display: block;
-}
-
 #countries-show #countries-elements .img-container .country-deploy .register-deploy {
-  opacity: 0;
-  height: 0;
-  display: none;
-  overflow: hidden;
   position: absolute;
   background: #e9e9e9;
   color: black;
@@ -185,7 +230,6 @@ header #landing-green {
 }
 
 #countries-show #countries-elements .img-container .country-deploy .register-deploy img {
-  overflow: hidden;
   min-width: auto;
   width: 25px;
 }
@@ -292,7 +336,7 @@ main section {
   font-weight: 400;
   padding: 115px 100px;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 main section .back-service-img {
