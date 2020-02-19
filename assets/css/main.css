@@ -289,6 +289,13 @@ header #landing-subheader-responsive {
   font-weight: 500;
   color: #848484;
   margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 512px) {
+  #why-ehh h2 {
+    font-size: 2.4rem;
+  }
 }
 
 #why-ehh h3 {
@@ -396,6 +403,38 @@ main section .service-content p {
 
 main section .service-content button {
   margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .arrow-connection {
+    display: none;
+  }
+  main section {
+    padding: 0;
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+  main section .service-main {
+    max-width: unset;
+    padding: 20px;
+    display: block;
+  }
+  main section .service-img {
+    width: 70vw;
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    display: block;
+  }
+  main section.reversed {
+    direction: ltr;
+  }
+  main section.reversed .service-main img.service-img {
+    left: auto;
+  }
 }
 
 .service-img {

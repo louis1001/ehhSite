@@ -6,14 +6,15 @@
     <title>eHarvestHub</title>
 
     <!-- Libraries JS -->
-    <script src="assets/js/libs/sal.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="assets/js/libs/sal.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
     <!-- Libraries CSS -->
-    <link rel="stylesheet" href="assets/css/libs/sal.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" href="assets/css/libs/sal.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/basic.css">
@@ -182,7 +183,7 @@
         <section id="eHarvestFarm">
             <img class="back-service-img whole-height" src="/assets/img/vegetables.png" alt="">
             <div class="service-main orange-gradient">
-                <img class="service-img" data-sal="slide-left" src="assets/img/eharvestfarm_side.png" alt="">
+                <img class="service-img anim-left" src="assets/img/eharvestfarm_side.png" alt="">
                 <div class="service-content">
                     <h1>eHarvestFarm</h1>
                     <h5 class="up-case">Para agricultores</h5>
@@ -220,7 +221,7 @@
         <section class="reversed" id="MarketPlace">
             <img class="back-service-img" src="/assets/img/tablet.png" alt="">
             <div class="service-main blue-gradient">
-                <img class="service-img" data-sal="slide-right" src="assets/img/marketplace_side.jpg" alt="">
+                <img class="service-img anim-right" src="assets/img/marketplace_side.jpg" alt="">
                 <div class="service-content">
                     <h1>MarketPlace</h1>
                     <h5 class="up-case">Para Supermercados</h5>
@@ -258,7 +259,7 @@
         <section id="eHarvestHaul">
             <img class="back-service-img" src="/assets/img/basket.png" alt="">
             <div class="service-main green-gradient">
-                <img class="service-img" data-sal="slide-left" src="assets/img/uharvesthaul_side.jpg" alt="">
+                <img class="service-img anim-left" src="assets/img/uharvesthaul_side.jpg" alt="">
                 <div class="service-content">
                     <h1>eHarvestHaul</h1>
                     <h5 class="up-case">Para transportistas</h5>
@@ -295,8 +296,6 @@
         <!-- Anything -->
     </footer>
     <script src="/assets/js/carousel.js"></script>
-    <script>
-        sal()
-    </script>
+    <script src="assets/js/scroll_animation.js"></script>
 </body>
 </html>
