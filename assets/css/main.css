@@ -31,7 +31,7 @@
 }
 
 header {
-  background: url(/assets/img/header-bg.jpg);
+  background: url(/assets/img/header_bg.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -175,9 +175,19 @@ header #landing-green {
   color: black;
   left: -80%;
   right: 0;
-  padding: 10px 40px;
+  padding: 30px 40px;
   -webkit-transition: opacity 4s;
   transition: opacity 4s;
+}
+
+#countries-show #countries-elements .img-container .country-deploy .register-deploy div {
+  margin-bottom: 15px;
+}
+
+#countries-show #countries-elements .img-container .country-deploy .register-deploy img {
+  overflow: hidden;
+  min-width: auto;
+  width: 25px;
 }
 
 #countries-show #countries-controls {
@@ -185,7 +195,16 @@ header #landing-green {
 }
 
 #countries-show #countries-controls button {
-  margin: 0 15px;
+  margin: 0 5px;
+}
+
+#countries-show #countries-controls button img {
+  width: 50px;
+}
+
+#countries-show #countries-controls button img:hover {
+  -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
 }
 
 .service-container {
@@ -319,8 +338,12 @@ main section .service-content h5 {
 }
 
 main section .service-content li {
-  list-style: url(/assets/img/u62.svg);
+  list-style: url(/assets/img/check_yellow.svg);
   margin-bottom: 5px;
+}
+
+main section .service-content .red-checks li {
+  list-style: url(/assets/img/check_red.svg);
 }
 
 main section .service-content p {
