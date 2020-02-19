@@ -242,6 +242,123 @@ header #landing-green {
   color: #888;
 }
 
+.orange-gradient {
+  background: radial-gradient(circle, #e8af18 0%, #e37a00 100%);
+}
+
+.blue-gradient {
+  background: radial-gradient(circle, #009cb2 0%, #024962 100%);
+}
+
+.green-gradient {
+  background: radial-gradient(circle, #00b25a 0%, #02622e 100%);
+}
+
+main {
+  position: relative;
+}
+
+main .arrow-connection {
+  position: absolute;
+  z-index: 200;
+  left: 50%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+main section {
+  background: #e6e6e6;
+  color: white;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  padding: 115px 100px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+main section .back-service-img {
+  top: 0;
+  left: 0;
+  width: 320px;
+  position: absolute;
+  -webkit-transition: none;
+  transition: none;
+}
+
+main section .service-main {
+  padding: 40px 70px;
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 13px;
+}
+
+main section .service-content p {
+  max-width: 430px;
+}
+
+main section .service-content ul {
+  margin: 35px 0 35px -20px;
+}
+
+main section .service-content h1 {
+  font-family: 'Slabo 27px', serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 0;
+}
+
+main section .service-content h5 {
+  font-family: unset;
+  font-weight: 400;
+  color: black;
+  font-size: 22px;
+  margin: 0;
+}
+
+main section .service-content li {
+  list-style: url(/assets/img/u62.svg);
+  margin-bottom: 5px;
+}
+
+main section .service-content p {
+  line-height: 19px;
+}
+
+main section .service-content button {
+  margin: 0 10px;
+}
+
+.service-img {
+  width: 560px;
+  position: absolute;
+  right: -290px;
+  top: -90px;
+}
+
+main section.reversed {
+  direction: rtl;
+}
+
+main section.reversed .back-service-img {
+  left: auto;
+  right: 0;
+}
+
+main section.reversed .service-main {
+  direction: ltr;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main section.reversed .service-main .service-img {
+  left: -290px;
+}
+
 .btn {
   border-radius: 20px;
   padding: 5px 20px;

@@ -42,3 +42,94 @@
         margin: 0 auto
         color: #888
 
+.orange-gradient
+    background: radial-gradient(circle, #e8af18 0%,#e37a00 100%)
+
+.blue-gradient
+    background: radial-gradient(circle, #009cb2 0%,#024962 100%)
+
+.green-gradient
+    background: radial-gradient(circle, #00b25a 0%, #02622e 100%)
+
+main
+    position: relative
+
+    .arrow-connection
+        position: absolute
+        z-index: 200
+        left: 50%
+        transform: translateY(-50px)
+
+    section
+        background: #e6e6e6
+        color: white
+        font-family: 'Source Sans Pro', serif
+        font-weight: 400
+        padding: 115px 100px
+        position: relative
+        overflow-y: hidden
+
+        .back-service-img
+            top: 0
+            left: 0
+            width: 320px
+            position: absolute
+            transition: none
+
+        .service-main
+            padding: 40px 70px
+            max-width: 650px
+            display: flex
+            position: relative
+            font-size: 13px
+
+        .service-content
+            p
+                max-width: 430px
+            
+            ul
+                margin: 35px 0 35px -20px
+
+            h1
+                font-family: 'Slabo 27px', serif
+                font-size: 44px
+                font-weight: 400
+                margin: 0
+
+            h5
+                font-family: unset
+                font-weight: 400
+                color: black
+                font-size: 22px
+                margin: 0
+
+            li
+                list-style: url(/assets/img/u62.svg)
+                margin-bottom: 5px
+
+            p
+                line-height: 19px
+
+            button
+                margin: 0 10px
+
+.service-img
+    width: 560px
+
+    position: absolute
+    right: -290px
+    top: -90px
+
+main section.reversed
+    direction: rtl
+
+    .back-service-img
+        left: auto
+        right: 0
+    .service-main
+        direction: ltr
+        flex-direction: row-reverse
+    
+        .service-img
+            // display: none
+            left: -290px
