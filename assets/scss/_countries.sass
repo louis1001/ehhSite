@@ -5,6 +5,9 @@
     #countries-elements
         color: white
 
+        .slick-list
+            overflow: visible
+
         .img-container
             position: relative
             height: 237px
@@ -26,28 +29,26 @@
                 left: 50px
             
             .country-deploy
-                display: none       // It's failing. I'll come back to it
                 position: absolute
                 font-size: 24px
-                bottom: 10px
-                left: 50%
-                margin-left: -24px
-                right: 0
-                z-index: 10
+                top: calc(100% - 28px)
+                left: 0
+                width: 100%
+                height: auto
+                overflow: hidden
 
                 .depl-arrow
+                    position: relative
                     cursor: pointer
+                    text-align: center
 
                 &:hover>.depl-arrow
                     color: rgb(247, 151, 42)
 
                 .register-deploy
-                    position: absolute
+                    display: none
                     background: #e9e9e9
                     color: black
-
-                    left: -80%
-                    right: 0
                     padding: 30px 40px
                     transition: opacity 4s
 
