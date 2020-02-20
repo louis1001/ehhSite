@@ -38,7 +38,7 @@
 }
 
 header {
-  background: url(assets/img/header_bg.jpg);
+  background: url(../img/header_bg.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -393,12 +393,12 @@ main section .service-content h5 {
 }
 
 main section .service-content li {
-  list-style: url(assets/img/check_yellow.svg);
+  list-style: url(../img/check_yellow.svg);
   margin-bottom: 5px;
 }
 
 main section .service-content .red-checks li {
-  list-style: url(assets/img/check_red.svg);
+  list-style: url(../img/check_red.svg);
 }
 
 main section .service-content p {
