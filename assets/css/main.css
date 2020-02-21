@@ -31,6 +31,10 @@
   margin: 0 10px;
 }
 
+#main-nav #navbar-actions .nav-item a {
+  color: unset;
+}
+
 @media screen and (max-width: 1024px) {
   #main-nav #navbar-actions {
     display: none;
@@ -97,6 +101,16 @@ header #landing-text .buttons-container > .btn-group {
 header #landing-text .buttons-container > .btn-group .btn {
   display: block;
   margin: 0 5px;
+}
+
+header #landing-text .buttons-container .cto-programs:hover {
+  color: #ce5c00;
+  background: white;
+}
+
+header #landing-text .buttons-container .btn.white-outline-btn:hover {
+  color: black;
+  background: white;
 }
 
 header #landing-img {
@@ -178,6 +192,18 @@ header #landing-subheader-responsive {
   height: 237px;
 }
 
+@media screen and (min-width: 2048px) {
+  #countries-show #countries-elements .img-container {
+    height: 350px;
+  }
+  #countries-show #countries-elements .img-container .country-detail {
+    left: 100px;
+  }
+  #countries-show #countries-elements .img-container .country-detail h3 {
+    font-size: 3rem;
+  }
+}
+
 #countries-show #countries-elements .img-container img {
   max-height: 100%;
   min-width: 100%;
@@ -203,7 +229,7 @@ header #landing-subheader-responsive {
 #countries-show #countries-elements .img-container .country-deploy {
   position: absolute;
   font-size: 24px;
-  top: calc(100% - 28px);
+  top: calc(100% - 15px);
   left: 0;
   width: 100%;
   height: auto;
@@ -213,11 +239,9 @@ header #landing-subheader-responsive {
 #countries-show #countries-elements .img-container .country-deploy .depl-arrow {
   position: relative;
   cursor: pointer;
-  text-align: center;
-}
-
-#countries-show #countries-elements .img-container .country-deploy:hover > .depl-arrow {
-  color: #f7972a;
+  width: 20px;
+  min-width: auto;
+  margin: 0 auto;
 }
 
 #countries-show #countries-elements .img-container .country-deploy .register-deploy {
@@ -227,6 +251,8 @@ header #landing-subheader-responsive {
   padding: 30px 40px;
   -webkit-transition: opacity 4s;
   transition: opacity 4s;
+  font-size: 1em;
+  margin-top: 5px;
 }
 
 #countries-show #countries-elements .img-container .country-deploy .register-deploy div {
@@ -236,6 +262,18 @@ header #landing-subheader-responsive {
 #countries-show #countries-elements .img-container .country-deploy .register-deploy img {
   min-width: auto;
   width: 25px;
+  display: inline-block;
+}
+
+#countries-show #countries-elements .img-container .country-deploy .register-deploy .btn {
+  color: white;
+  border: white;
+}
+
+#countries-show #countries-elements .img-container .country-deploy .register-deploy .btn:hover {
+  color: #ce5c00;
+  background: white;
+  border: none;
 }
 
 #countries-show #countries-controls {
@@ -445,6 +483,63 @@ main section .service-content a * {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  main section.reversed .service-main {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  main section.reversed .service-main .service-content {
+    -webkit-transform: translateX(25vw);
+            transform: translateX(25vw);
+  }
+  main section.reversed .service-main img.service-img {
+    left: -7.5vw;
+  }
+  main section .service-main {
+    max-width: 50vw;
+    height: 30vw;
+    margin: 0 auto;
+    padding-top: 3vw;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  main section .service-content h1 {
+    font-size: 3vw;
+    margin-bottom: 10px;
+  }
+  main section .service-content h5 {
+    font-size: 1.3vw;
+    margin-bottom: 30px;
+  }
+  main section .service-content p, main section .service-content ul, main section .service-content a {
+    max-width: 50%;
+    line-height: 1.2em;
+    font-size: 1.1vw;
+  }
+  main section .service-content ul {
+    margin-top: 5px;
+  }
+  main section .service-content .service-buttons {
+    margin-top: 2em;
+  }
+  main section .service-img {
+    width: auto;
+    height: 100%;
+    top: -30px;
+    left: unset;
+    right: -7.5vw;
+  }
+  main section .back-service-img {
+    left: 8vw;
+    width: 22vw;
+    max-height: 100%;
+  }
+}
+
 .service-img {
   width: 560px;
   position: absolute;
@@ -482,14 +577,8 @@ main section.reversed .service-main .service-img {
 
 .orange-btn {
   background: #ce5c00;
-  border: 1px solid #ce5c00;
   -webkit-transition: background .3s;
   transition: background .3s;
-}
-
-.orange-btn:hover {
-  background: none;
-  color: white;
 }
 
 .white-outline-btn {
@@ -497,11 +586,6 @@ main section.reversed .service-main .service-img {
   border: 1px solid white;
   -webkit-transition: background .3s;
   transition: background .3s;
-}
-
-.white-outline-btn:hover {
-  background: white;
-  color: #ce5c00;
 }
 
 .out-dark {

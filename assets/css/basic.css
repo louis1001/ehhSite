@@ -5,8 +5,13 @@ button {
 }
 
 a {
-    all: unset;
+    text-decoration: none;
     cursor: pointer;
+    color: unset;
+}
+
+a:visited{
+    color: unset;
 }
 
 h1 {

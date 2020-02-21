@@ -152,6 +152,63 @@ main
                 direction: ltr
                 .service-main img.service-img
                     left: auto
+    
+    @media screen and (min-width: 1440px)
+        section.reversed
+            .service-main
+                flex-direction: unset
+                transform: translateX(80px)
+
+                .service-content
+                    transform: translateX(25vw)
+                
+                img.service-img
+                    left: -7.5vw
+
+        section
+            // text-align: center
+            .service-main
+                max-width: 50vw
+                height: 30vw
+                margin: 0 auto
+                padding-top: 3vw
+
+                transform: translateX(-80px)
+
+            .service-content
+                h1
+                    font-size: 3vw
+                    margin-bottom: 10px
+
+                h5
+                    font-size: 1.3vw
+                    margin-bottom: 30px
+
+                p, ul, a
+                    max-width: 50%
+                    line-height: 1.2em
+                    font-size: 1.1vw
+                
+                ul
+                    margin-top: 5px
+
+                .service-buttons
+                    margin-top: 2em
+                // *
+                //     font-size: 1.2vw
+            
+            .service-img
+                width: auto
+                height: 100%
+                top: -30px
+                left: unset
+                right: -7.5vw
+
+            .back-service-img
+                // background: #00000077
+                left: 8vw
+                width: 22vw
+                max-height: 100%
 
 .service-img
     width: 560px
@@ -169,7 +226,7 @@ main section.reversed
     .service-main
         direction: ltr
         flex-direction: row-reverse
-    
+
         .service-img
             // display: none
             left: -290px

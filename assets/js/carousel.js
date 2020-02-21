@@ -4,25 +4,11 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         autoplay: true,
-        slidesToShow: 5,
+        slidesToShow: 3,
         prevArrow: '#countries-controls .prev',
         nextArrow: '#countries-controls .next',
         slidesToScroll: 1,
         responsive: [
-            {
-                breakpoint: 2048,
-                settings: {
-                    slidesToShow: 4,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 3,
-                    infinite: true,
-                }
-            },
             {
                 breakpoint: 1024,
                 settings: {
@@ -42,9 +28,6 @@ $(document).ready(function(){
                     slidesToShow: 1,
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     })
 })
